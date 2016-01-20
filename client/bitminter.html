@@ -1,0 +1,12 @@
+<template name="bitminter">
+  <div class="jumbotron display-table">
+    <div class="display-table-cell">
+      {{#if loading}}
+        <h3><span class="glyphicon glyphicon-refresh spinning"></span> Loading...</h3>
+      {{else}}
+        <h1 class="text-success">{{btc}} <small>BTC</small></h1>
+        <h3>{{hash}} <small>ghps</small></h3>
+      {{/if}}
+    </div>
+  </div>
+</template>
